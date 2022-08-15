@@ -1,0 +1,89 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+//headercontainer//
+.header-container{
+    width: 100%;
+    height: 850px;
+    position: relative;
+    
+
+    .header-block{
+        width: 100%;
+        height: 30px;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+        @media(max-width: 1010px){
+            width: 100%;
+        }
+        @media(max-width: 840px){
+            width: 100%;
+            background-color: #E3A13D;
+        }
+        .headerblock-info{
+            width: 1290px;
+            height: 20px;
+            border: 1px black solid;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    //headerimageblock//
+    .image-block{
+        width: 100%;
+        height: 800px;
+        position: relative;
+
+        .headerimages-block{
+            width: 100%;
+            height: 800px;
+            background-image: url(images/car-image.png);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+    
+            @media (max-width: 1010px){
+                width: 100%;
+            }
+            @media (max-width: 840px){
+                width: 100%;
+                height: 400px;
+                background-position: center center;
+            }
+        }
+
+       
+        .logo-ul-block{
+            width: 1253px;
+            height: 63px;
+            padding-top: 0px;
+            background-color: blue;
+            z-index: 2;
+            margin: auto;
+            margin-top: 0px;
+            display: flex;
+
+        }
+        .links-block{
+            width: 432px;
+            position: absolute;
+            right: 0px;
+            display: flex;
+        }
+    }
+   
+    .yellow-block{
+        width: 100%;
+        height: 20px;
+        background-color: #E3A13D;
+        position: relative;
+    }
+}
