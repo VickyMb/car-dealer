@@ -26,9 +26,6 @@ body {
   font-family: @RobotoFont;
 }
 
-.header-border {
-  width: 50px;
-}
 //headercontainer//
 .header-container {
   width: 100%;
@@ -370,5 +367,483 @@ body {
     width: 414px;
     margin: auto;
     text-align: center;
+    font-size: 48px;
+
+    @media(max-width: 1010px){
+      width: 100%
+    }
+  
   }
+  .header-border{
+    height: 0px;
+    width: 219px;
+    color: #E75470;
+    margin: auto;
+  }
+  .text{
+    width: 832px;
+    margin: auto;
+    margin-top: 46px;
+    color: #636363;
+
+    @media(max-width: 840px){
+      width: 600px;
+      position: relative;
+    }
+    @media(max-width:740px){
+      width: 450px;
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      margin-bottom: 8px;
+      font-family: @RobotoFont;
+
+      @media(max-width: 840px){
+        width: 100%;
+        position: relative;
+      }
+   }
+  }
+ 
+}
+
+//carbrand//
+.car-brand{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 94px;
+  box-sizing: border-box;
+
+  @media(max-width: 1010px){
+    width: 100%;
+    flex-direction: column;
+    display: block;
+  }
+
+  .brand-details{
+    width: 50%;
+    background-color: #282662;
+    height: 509px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+
+    @media(max-width: 1200px){
+      width: 80%;
+      margin: auto;
+    }
+
+    @media(max-width: 1010px){
+      box-sizing: border-box;
+      width: 100%;
+      display: block;
+    }
+
+    @media(max-width: 840px){
+      width: 100%;
+    }
+    @media(max-width: 740px){
+      width: 100%;
+      display: block;
+      flex-direction: column;
+    }
+
+    .branddetails-block{
+      width: 571px;
+      position: relative;
+      margin-left: 52px;
+      margin-top: 41px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 70px;
+
+      @media(max-width:740px){
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+  
+
+      .all-branddetails{
+        width: 206px;
+        height: 177px;
+        
+
+        .min-picture{
+          position: absolute;
+          left: 159px;
+        }
+        .max-picture{
+          position: absolute;
+          left: 529px;
+        }
+        h4{
+          text-align: right;
+          color : white;
+          font-family: @RobotoFont;
+          font-size: 16px;
+          margin-top: 58px;
+        }
+        p{
+          text-align: right;
+          color: white;
+          font-size: 14px;
+          font-family: @RobotoFont;
+          margin-top: 10px;
+        }
+
+    }
+    }
+  
+  }
+
+  .brand-image{
+    background-image: url(images/brand-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    background-position: center center;
+
+    @media(max-width: 1010px){
+      display: none;
+    }
+    @media(max-width: 840px){
+      width: 100%;
+      display: none;
+    }
+  }
+
+}
+//featuredvehicleblock//
+.featuredvehicle-block{
+  width: 100%;
+  position: relative;
+  background-color: white;
+
+  .site-header{
+    margin-top: 115px;
+    text-align: center;
+    
+  }
+  .featuredvehicle-site{
+    width: 1226px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  
+    margin-top: 114px;
+    margin-left: 67px;
+
+    .form-block{
+      width: 161px;
+      position: relative;
+      background-color: white;
+
+      .form-list{
+        position: relative;
+        width: 161px;
+
+        li{
+          list-style: none;
+          margin-bottom: 20px;
+          border-bottom: 1px solid gray;
+          padding-bottom: 15px;
+        }
+
+        .form-link{
+          margin-left: 29px;
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+          font-family: @RobotoFont;
+        }
+      }
+
+      .carsell-block{
+        margin-top: 140px;
+        background-color: #D7932E;
+        position: relative;
+        height: 334px;
+        
+
+        .black-box{
+          width: 138px;
+          height: 5px;
+          position: absolute;
+          background-color: #161109;
+          left: 10px;
+          top: 15px;
+        }
+        p{
+          width: 85px;
+          margin: auto;
+          text-align: center;
+          color: white;
+          font-family: @RobotoFont;
+          font-size: 14px;
+          padding-top: 35px;
+        }
+        img{
+          margin-top: 70px;
+          position: absolute;
+        }
+        .website-link{
+          background-color: @Primarycolor;
+          position: absolute;
+          font-size: 14px;
+          left: 10px;
+          margin-top: 210px;
+          padding: 8px 15px;
+          color: white;
+        }
+      }
+    }
+    .luxusvehicle-block{
+      width: 1019px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .luxus-cardetails{
+        width: 239px;
+        height: 326px;
+        border: 2px solid #E5E5E5;
+        margin-bottom: 17px;
+
+        .luxus-car{
+          position: absolute;
+          margin-top: 12px;
+          margin-left: 17px;
+        }
+
+        .setting-block{
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+
+          .setting-icon{
+            position: absolute;
+            top: 178px;
+          }
+          a{
+            text-decoration: none;
+            margin-left: 17px;
+            color: #868686;
+            font-family: @RobotoFont;
+          }
+          img{
+            margin-right: 10px;
+          }
+          p{
+            margin-top: 178px;
+            margin-left: 167px;
+            color: #868686;
+            font-family: @RobotoFont;
+            
+          }
+        }
+        h4{
+          color: #E75470;
+          font-family: @RobotoFont;
+          font-size: 16px;
+          text-align: center;
+          margin-top: 30px;
+          
+        }
+        .amount{
+          background-color: @Primarycolor;
+          width: 210px;
+          height: 27px;
+          margin: auto;
+          font-size: 16px;
+          font-family: @RobotoFont;
+          text-align: center;
+          padding-top: 5px;
+          color: white;
+          margin-top: 45px;
+        }
+
+      }
+
+    }
+  }
+
+}
+
+//sellcarblock//
+.sell-carblock{
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+
+  .sell-carimage{
+    width: 100%;
+    height: 435px;
+    background-image: url(images/sellcarbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+  .sell{
+    background-color: @Primarycolor;
+    font-family: @RobotoFont;
+    font-size: 48px;
+    width: 315px;
+    height: 224px;
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding-top: 53px;
+    left: 121px;
+    top: 106px;
+    opacity: 83%;
+  }
+  .hero-car{
+    position: absolute;
+    z-index: 3px;
+    left: 664px;
+    top: 171px;
+    width: 577px;
+
+  }
+}
+
+//soldcarblock//
+.soldcar-block{
+  width: 100%;
+  position: relative;
+
+  .site-header{
+    text-align: center;
+    margin-top: 35px;
+    font-family: @RobotoFont;
+  }
+  .soldlexus-block{
+    width: 1065px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 100px;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .sold-site{
+      width: 323px;
+      height: 379px;
+      border: 1px solid #EEEEEE;
+      box-sizing: border-box;
+
+      .black-car{
+        margin-bottom: 20px;
+      }
+      .setting-block{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+
+        p{
+          color: #868686;
+        }
+        .setting-icon{
+          color: #868686;
+          text-decoration: none;
+          margin-right: 5px;
+        }
+        img{
+          margin-right: 10px;
+        }
+      }
+
+      h4{
+        color: #E75470;
+        font-size: 20px;
+        margin-top: 25px;
+        text-align: center;
+      }
+      .amount{
+        color: #282662;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 38px;
+      }
+      .botom{
+        width: 323px;
+        height: 7px;
+        background-color: #282662;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+//testimonialcontainer//
+.testimonial-container{
+  position: relative;
+  width: 100%;
+  margin-top: 72px;
+
+  .testimonial-image{
+    width: 100%;
+    background-image: url(images/testimonial-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 742px;
+  }
+  h2{
+    z-index: 3;
+    text-align: center;
+    color : white;
+    font-size: 48px;
+    position: absolute;
+    top: 107px;
+    left: 553px;
+  }
+  .message-box{
+    z-index: 2px;
+    background-color: #D7932E;
+    width: 745px;
+    height: 167px;
+    position: absolute;
+    left: 319px;
+    top: 299px;
+    display: flex;
+    box-sizing: border-box;
+
+    img{
+      width: 84px;
+      height: 80px;
+      margin-top: 36px;
+      margin-right: 37px;
+      margin-left: 30px;
+    }
+
+    .site-text{
+      width: 554px;
+      color: white;
+      margin-top: 36px;
+      font-size: 16px;
+    }
+
+  }
+  
+  .loading-dot{
+    z-index: 2;
+    position: absolute;
+    top: 491px;
+    left: 702px;
+  }
+ 
 }
