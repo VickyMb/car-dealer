@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200&family=Pacifico&family=Rasa&family=Roboto:wght@100;400&display=swap");
+
+@RobotoFont: "Roboto", sans-serif;
+@Primarycolor: #282662;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: @RobotoFont;
+}
+
+//headercontainer//
+.header-container {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  
+  .header-block {
+      width: 100%;
+      background-color: white;
+      position: relative;
+      z-index: 2;
+  
+      @media (max-width: 1010px) {
+        width: 100%;
+      }
+  
+      @media (max-width: 840px) {
+        width: 100%;
+        background-color: #e3a13d;
+      }
+  
+      .headerblock-info {
+        width: 1290px;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+  
+        @media (max-width: 1300px) {
+          width: 90%;
+        }
+  
+        .opening-container {
+          display: flex;
+  
+          a {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            color: #7d7d7d;
+            text-decoration: none;
+  
+            img {
+              margin-right: 10px;
+            }
+          }
+        }
+  
+        .mediainfo-icon {
+          a {
+            margin-left: 10px;
+          }
+        }
+  
+        @media (max-width: 840px) {
+          display: none;
+        }
+      }
+    }
+
+    //headimageblock//
+    .image-block{
+        width: 100%;
+        position: relative;
+
+        .headerimage-block{
+            background-image: url(images/About-image.png);
+            height: 344px;
+            position: relative;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            .logo-ul-block {
+              width: 1253px;
+              height: 63px;
+              padding-top: 0px;
+              z-index: 2;
+              margin: auto;
+              margin-top: 0px;
+              display: flex;
+              justify-content: space-between;
+
+              .logo {
+                color: white;
+                margin-top: 20px;
+                font-size: 36px;
+                width: 93px;
+                font-family: @RobotoFont;
+              }
+
+              .links-block{
+                display: flex;
+                width: 432px;
+                position: absolute;
+                left: 527px;
+                margin-top: 35px;
+                justify-content: space-between;
+
+                .nav-link{
+                  color: white;
+                  text-decoration: none;
+                  list-style: none;
+                  font-size: 16px;
+                }
+                li{
+                  list-style: none;
+                }
+              }
+
+              button{
+                background-color: #E75470;
+                width: 80px;
+                height: 29px;
+                border-radius: 20px;
+                color: white;
+                border: none;
+                margin-top: 45px;
+                font-family: @RobotoFont;
+                
+              }
+            }
+            .border{
+              width: 1253px;
+              height: 1px;
+              border: 1px solid white;
+              margin: auto;
+              margin-top: 15px;
+            }
+
+            .about{
+              font-family: @RobotoFont;
+              color: white;
+              font-size: 48px;
+              text-align: center;
+              margin-top: 100px;
+            }
+        }
+    }
+} 
+//paragraphblock //
+.paragraph-block{
+  width: 100%;
+  position: relative;
+  
+  .paragraph{
+    width: 959px;
+    color: #636363;
+    background-color: white;
+    font-family: @RobotoFont;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    line-height: 19px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+}
+//whyushistorycontainer//
+.history-container{
+  position: relative;
+  width: 100%;
+  background-color: @Primarycolor;
+
+  .history-block{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .image-usblock{
+      width: 50%;
+      height: 534px;
+      background-image: url(images/whyus.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .why-us{
+      color: white;
+      font-family: @RobotoFont;
+      width: 50%;
+      height: 534px;
+
+      h2{
+        margin-top: 60px;
+        margin-left: 99px;
+        font-size: 48px;
+      }
+      .ligne{
+        width: 130px;
+        height: 9px;
+        background-color: #D7932E;
+        margin-top: 20px;
+        margin-left: 99px;
+      }
+
+      p{
+        margin-left: 99px;
+        width: 508px;
+        margin-top: 42px;
+        text-align: start;
+        font-size: 18px;
+        line-height: 20px;
+        height: 282px;
+      }
+      
+    }
+    .image-history{
+      background-image: url(images/history.png);
+      width: 50%;
+      height: 534px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
