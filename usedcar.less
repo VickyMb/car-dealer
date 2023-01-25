@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200&family=Pacifico&family=Rasa&family=Roboto:wght@100;400&display=swap");
+
+@RobotoFont: "Roboto", sans-serif;
+@Primarycolor: #282662;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: @RobotoFont;
+}
+
+//headercontainer//
+.header-container {
+    width: 100%;
+    position: relative;
+    
+    .header-block {
+        width: 100%;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+    
+        @media (max-width: 1010px) {
+          width: 100%;
+        }
+    
+        @media (max-width: 840px) {
+          width: 100%;
+          background-color: #e3a13d;
+        }
+    
+        .headerblock-info {
+          width: 1290px;
+          height: auto;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 10px;
+    
+          @media (max-width: 1300px) {
+            width: 90%;
+          }
+    
+          .opening-container {
+            display: flex;
+    
+            a {
+              margin-right: 20px;
+              display: flex;
+              align-items: center;
+              color: #7d7d7d;
+              text-decoration: none;
+    
+              img {
+                margin-right: 10px;
+              }
+            }
+          }
+    
+          .mediainfo-icon {
+            a {
+              margin-left: 10px;
+            }
+          }
+    
+          @media (max-width: 840px) {
+            display: none;
+          }
+        }
+    }
+
+    //headimageblock//
+    .image-block{
+        width: 100%;
+        position: relative;
+
+        .headerimage-block{
+            background-image: url(images/About-image.png);
+            height: 344px;
+            position: relative;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            .logo-ul-block {
+              width: 1253px;
+              height: 63px;
+              padding-top: 0px;
+              z-index: 2;
+              margin: auto;
+              margin-top: 0px;
+              display: flex;
+              justify-content: space-between;
+
+              .logo {
+                color: white;
+                margin-top: 20px;
+                font-size: 36px;
+                width: 93px;
+                font-family: @RobotoFont;
+              }
+
+              .links-block{
+                display: flex;
+                width: 432px;
+                position: absolute;
+                left: 527px;
+                margin-top: 35px;
+                justify-content: space-between;
+
+                .nav-link{
+                  color: white;
+                  text-decoration: none;
+                  list-style: none;
+                  font-size: 16px;
+                }
+                li{
+                  list-style: none;
+                }
+              }
+
+              button{
+                background-color: #E75470;
+                width: 80px;
+                height: 29px;
+                border-radius: 20px;
+                color: white;
+                border: none;
+                margin-top: 45px;
+                font-family: @RobotoFont;
+                
+              }
+            }
+            .border{
+              width: 1253px;
+              height: 1px;
+              border: 1px solid white;
+              margin: auto;
+              margin-top: 15px;
+            }
+
+            .about{
+              font-family: @RobotoFont;
+              color: white;
+              font-size: 48px;
+              text-align: center;
+              margin-top: 100px;
+            }
+        }
+    }
+}
+
+//browserblock//
+.browser-container{
+    position: relative;
+    width: 100%;
+
+    .browser-block{
+        width: 1146px;
+        position: relative;
+        background-color: rgb(234, 226, 226);
+        margin-left: 145px;
+        height: 186px;
+        margin-top: 20px;
+
+        h4{
+            font-size: 24px;
+            text-align: center;
+            color: #787878;
+            padding-top: 30px;
+        }
+        .form-block{
+          width: 767px;
+          position: relative;
+          margin-left: 131px;
+          margin-top: 35px;
+
+          .makeselection{
+            width: 180px;
+            padding: 10px 10px;
+            color: #282662;
+          }
+          .search{
+            width: 100px;
+            padding: 10px 10px;
+            background: #D7932E;
+            color: white;
+            border: none;
+          }
+
+          p{
+            color: #E75470;
+            margin-top: 15px;
+            margin-bottom: 43px;
+          }
+        }
+
+    }
+}
+//carinfocontainer//
+.carinfo-container{
+  position: relative;
+  width: 100%;
+  background-color: rgb(234, 226, 226);
+  padding-top: 43px;
+  
+
+  .carinfo-block{
+    position: relative;
+    width: 1146px;
+    height: 365px;
+    margin-left: 145px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+    
+  }
+}
